@@ -31,7 +31,7 @@ class DirManager(QtCore.QObject):
         new_files = [f for f in current if f not in self.previous]
         for each in new_files:
             self.handle_new_file(each)
-        self.previous = current
+        self.previous = [f for f in self.path.iterdir() if f.is_file()]
 
     def handle_new_file(self, file_path: pathlib.Path):
         Logger.info("New file: {0}".format(file_path.as_posix()))
