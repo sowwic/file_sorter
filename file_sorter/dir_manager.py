@@ -18,7 +18,7 @@ class DirManager(QtCore.QObject):
         self.previous = []
         Logger.info(self)
 
-        if sort_existing:
+        if not sort_existing:
             self.previous = [f for f in self.path.iterdir() if f.is_file()]
 
         # Setup timer
