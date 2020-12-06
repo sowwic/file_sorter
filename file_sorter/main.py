@@ -1,4 +1,5 @@
 import sys
+import os
 from PySide2 import QtWidgets
 from PySide2 import QtGui
 
@@ -8,6 +9,8 @@ from file_sorter import Config
 from file_sorter.dialog import LoggerWindow
 from file_sorter import palette
 from file_sorter import tray
+
+os.environ["QT_MAC_WANTS_LAYER"] = "1"
 
 
 if __name__ == "__main__":
