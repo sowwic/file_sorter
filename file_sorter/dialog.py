@@ -39,8 +39,7 @@ class LoggerWindow(QtWidgets.QDialog):
         # Init manager
         self.manager = DirManager(path=self.config.parser.get("General", "dir"),
                                   folders_dict=self.config.get_folders(),
-                                  sort_existing=self.config.parser.getboolean("General", "sort_existing", fallback=True),
-                                  update_interval=self.config.parser.getint("General", "update_interval", fallback=10))
+                                  sort_existing=self.config.parser.getboolean("General", "sort_existing", fallback=True))
 
     def create_actions(self):
         pass
