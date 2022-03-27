@@ -1,7 +1,7 @@
 #!/bin/bash  
 APP_NAME="file_sorter"
 MAIN_FILE_PATH=file_sorter/main.py
-SITE_PACKAGES_PATH=.env/Lib/site-packages
+SITE_PACKAGES_PATH=.venv/Lib/site-packages
 CONFIG_FILE="config.ini;."
 RES_FOLDER="res/;res/"
 ICON_PATH=res/images/icon.ico
